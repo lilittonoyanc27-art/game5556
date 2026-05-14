@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+Armenian:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lexend", "Noto Sans Armenian", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Lexend", "Noto Sans Armenian", sans-serif;
+  
+  --color-brand-blue-dark: #0F172A;
+  --color-brand-blue: #3B82F6;
+  --color-brand-sky: #7DD3FC;
+  --color-brand-soft: #F1F5F9;
+  --color-brand-ice: #F8FAFC;
+
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(-5%) scale(1.05); }
+    50% { transform: translateY(5%) scale(1); }
+  }
+
+  --animate-bounce-slow: bounce-slow 8s infinite ease-in-out;
+}
+
+@layer base {
+  body {
+    @apply text-slate-900 font-sans antialiased bg-slate-50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-4 rounded-3xl font-black text-lg transition-all transform active:scale-95 bg-brand-blue-dark text-white shadow-xl shadow-brand-blue-dark/20 hover:scale-105 hover:bg-slate-800;
+  }
+
+  .btn-outline {
+    @apply px-8 py-4 rounded-3xl font-black text-lg transition-all transform active:scale-95 bg-white border-2 border-slate-200 text-slate-600 hover:border-brand-blue hover:text-brand-blue;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Spanish Transport Adventure",
+  "description": "Ինտերակտիվ 3D բառախաղ (Savannah Challenge) տրանսպորտի տեսակների մասին: Օգնիր Գոռին և Գայանեին գուշակել իսպաներեն բառերը:",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
